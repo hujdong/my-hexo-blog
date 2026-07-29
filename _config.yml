@@ -5,11 +5,12 @@
 # Site
 title: "想像力"
 subtitle: "比知识更重要"
-description: ''
+description: '我可以跟藝術家一樣，自由揮灑我的想像力。想像力比知識更重要，知識是有限的，想像力卻可以囊括整個世界。
+I am enough of an artist to draw freely upon my imagination. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world. '
 keywords:
-author: John Doe
+author: 511PaPa
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'

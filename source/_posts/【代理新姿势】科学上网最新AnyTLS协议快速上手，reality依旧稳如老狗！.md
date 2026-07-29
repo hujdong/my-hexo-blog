@@ -12,7 +12,7 @@ categories:
 
 
 
-<!-- more -->> 引用[不良林博客](https://bulianglin.com/archives/anytls.html)
+> 引用[不良林博客](https://bulianglin.com/archives/anytls.html)
 
 ---
 
@@ -26,6 +26,8 @@ categories:
 * 官方项目仓库：[anytls/anytls-go](https://github.com/anytls/anytls-go)
 
 AnyTLS 是一个试图缓解 **嵌套的 TLS 握手指纹 (TLS in TLS)** 阻断问题的代理协议。`anytls-go` 是该协议的 Go 语言参考实现。
+
+<!-- more -->
 
 ### 主要特点
 * 灵活的分包和填充策略

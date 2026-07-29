@@ -5,7 +5,7 @@ tags:
 ---
 
 
-<!-- more -->---
+---
 title: butterfly主题部署指南
 date: 2025-08-09 13:22:39
 tags:
@@ -17,6 +17,7 @@ tags:
 
 **先贴上butterfly主题作者的官方美化文档地址，如果有大佬比较会的可以直接看他的（~不过部分功能可能用不了了~）：**  
 [Butterfly 安裝文檔(一) 快速開始 | Butterfly](https://butterfly.js.org/posts/21cfbf15/#%E5%8D%87%E7%B4%9A%E5%BB%BA%E8%AD%B0 "Butterfly 安裝文檔(一) 快速開始 | Butterfly")
+<!-- more -->
 
 **注意！！！如果发现配置不生效，请先执行 `hexo clean`，然后清除浏览器缓存试试。如果还是不行，请检查配置文件的缩进是否有问题！！！**
 

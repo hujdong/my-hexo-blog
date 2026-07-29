@@ -10,7 +10,7 @@ categories:
 ---
 
 
-> 引用[不良林博客](https://bulianglin.com/archives/anytls.html)。在推送到您的博客之前，请务必编辑以下内容：
+> 引用[不良林博客](https://bulianglin.com/archives/anytls.html)
 
 ---
 

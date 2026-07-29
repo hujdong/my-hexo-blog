@@ -1,40 +1,29 @@
 ﻿---
-title: Hello World
+title: 欢迎来到我的博客！
+date: 2026-07-29 06:08:00
+tags:
+  - 随笔
+  - 建站
+categories:
+  - 站点公告
 ---
 
+欢迎来到我的全新个人博客！这里是我分享技术探索、日常折腾、网络与开源项目心得的小天地。
 
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
-
-## Quick Start
-
-### Create a new post
 <!-- more -->
-``` bash
-$ hexo new "My New Post"
-```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+## 📌 关于本站
 
-### Run server
+本博客采用了极简、高效的现代 **Jamstack 架构** 构建：
+* **博客引擎**：[Hexo](https://hexo.io/) 配合经典的 **NexT (Pisces 预设)** 极客主题。
+* **源码托管**：GitHub 上的私有仓库，确保草稿与源文件安全。
+* **全球分发**：由 [Cloudflare Pages](https://pages.cloudflare.com/) 提供全球 CDN 自动编译与边缘加速。
 
-``` bash
-$ hexo server
-```
+## 💡 我会在这里分享什么？
 
-More info: [Server](https://hexo.io/docs/server.html)
+* 🐧 **Linux & 运维**：系统维护、Docker 容器化部署、Shell 脚本自动化。
+* 🌐 **网络与前沿协议**：网络打洞 P2P、OpenWrt 固件、最新代理协议（如 AnyTLS、Reality 等）测试与对比。
+* 🛠️ **优质开源工具**：分享好用、提升生产力的开源神器与独立产品。
+* ✍️ **个人随笔**：记录技术折腾过程中的避坑指南与心得体会。
 
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+> 欢迎在关于（About）页面了解更多，或通过 GitHub 与我交流！

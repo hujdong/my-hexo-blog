@@ -1,72 +1,68 @@
 ﻿---
-title: 【代理新姿势】科学上网最新AnyTLS协议快速上手，reality依旧稳如老狗！
+title: 【代理新姿势】科学上网最新 AnyTLS 协议快速上手，Reality 依旧稳如老狗！
 date: 2025-05-17 11:18:00
 tags:
   - 科学上网
   - AnyTLS
   - 代理协议
 categories:
-  - 科学上网
+  - 网络技术
 ---
 
-
-
-
-> 引用[不良林博客](https://bulianglin.com/archives/anytls.html)
-
----
-
-## 视频教程
-
-* YouTube 播放地址：[点击观看](https://youtu.be/yUJ--0eUs_o)
----
-
-## AnyTLS 协议介绍
-
-* 官方项目仓库：[anytls/anytls-go](https://github.com/anytls/anytls-go)
-
-AnyTLS 是一个试图缓解 **嵌套的 TLS 握手指纹 (TLS in TLS)** 阻断问题的代理协议。`anytls-go` 是该协议的 Go 语言参考实现。
+随着防火墙对 TLS in TLS（嵌套加密隧道）指纹识别能力的提升，全新的 AnyTLS 协议应运而生。本文将为您盘点目前主流代理协议的现状，并介绍 AnyTLS 的核心机制与部署方法。
 
 <!-- more -->
 
-### 主要特点
-* 灵活的分包和填充策略
-* 支持连接复用，降低代理延迟
-* 配置简洁易懂
+> 📖 **声明**：本文内容引自技术博主 *不良林* 的分享与测试实录。
 
 ---
 
-## 支持 AnyTLS 协议的代理工具
+## 📊 主流代理协议稳定度近况盘点
 
-### 1. sing-box
-* 项目地址：[SagerNet/sing-box](https://github.com/SagerNet/sing-box)
-* *注：同时包含 anytls 协议的服务端和客户端实现。*
+根据近两年的部署反馈与实测表现总结如下：
 
-### 2. mihomo (原 Clash Meta)
-* 项目地址：[MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo)
-* *注：同时包含 anytls 协议的服务端和客户端实现。*
-
-### 3. Shadowrocket (小火箭)
-* 客户端版本：Shadowrocket 2.2.65+
-* *注：实现了 anytls 协议的 iOS 客户端。*
-
-### 4. NekoBox For Android
-* 下载地址：[NekoBoxForAndroid Releases](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases)
-* *注：NekoBox For Android 1.3.8+ 实现了 anytls 协议的客户端。*
+| 协议组合 | 稳定度表现 | 现状与建议 |
+| :--- | :--- | :--- |
+| **SS (Shadowsocks)** | 🔴 极易被封 | 普通 VPS 搭建后大概率极短时间内被直接封禁 IP，不推荐 |
+| **VMess + WS** | 🟡 频繁封端口 | 特征明显，容易被精准封锁端口，需要频繁更换端口，不推荐 |
+| **VLESS + Vision** | 🟢 较为稳定 | 表现尚可。若遇到阻断多是因为免费节点域名（如 `nip.io`）被污染，换用正常域名即可 |
+| **VLESS + Reality** | 🟢🟢 **稳如老狗** | **最推荐**。几乎零被封记录，抗封锁能力极强 |
 
 ---
 
-## 搭建方式
+## 🛡️ 什么是 AnyTLS？
 
-### 方法一：通过 `anytls-go` 官方程序
+* 官方 GitHub 仓库：[anytls/anytls-go](https://github.com/anytls/anytls-go)
+
+**AnyTLS** 是一个旨在缓解 **TLS in TLS 握手指纹识别** 问题的全新代理协议。
+
+### 核心优势
+1. **灵活的分包与填充策略**：支持自定义数据包填充字节长度与包数量，大幅增加防火墙特征分析难度。
+2. **连接复用**：降低代理握手延迟，提升访问流畅度。
+3. **简洁配置**：支持自签证书与极简指令运行。
+
+---
+
+## 📱 支持 AnyTLS 的客户端与工具
+
+* **sing-box**：内置服务端与客户端支持（[GitHub 仓库](https://github.com/SagerNet/sing-box)）
+* **mihomo (Clash Meta)**：内置服务端与客户端支持（[GitHub 仓库](https://github.com/MetaCubeX/mihomo)）
+* **Shadowrocket (小火箭)**：iOS 客户端 2.2.65+ 版本已完美支持
+* **NekoBox For Android**：安卓客户端 1.3.8+ 版本已支持
+
+---
+
+## 🚀 极速部署教程
+
+### 方法一：使用 `anytls-go` 官方程序
 
 #### 1. 服务端部署
 ```bash
-# 启动服务端监听 8443 端口，设置您的密码
-./anytls-server -l 0.0.0.0:8443 -p 您的密码
+# 启动服务端监听 8443 端口
+./anytls-server -l 0.0.0.0:8443 -p 你的自定义密码
 
 # 后台静默运行
-nohup ./anytls-server -l 0.0.0.0:8443 -p 您的密码 > /dev/null 2>&1 &
+nohup ./anytls-server -l 0.0.0.0:8443 -p 你的自定义密码 > /dev/null 2>&1 &
 
 # 结束后台进程
 pkill -f anytls-server
@@ -74,19 +70,19 @@ pkill -f anytls-server
 
 #### 2. 客户端运行
 ```bash
-./anytls-client -l 127.0.0.1:1080 -s 服务器IP:8443 -p 您的密码
+./anytls-client -l 127.0.0.1:1080 -s 服务器IP:8443 -p 你的自定义密码
 ```
 
 ---
 
-### 方法二：通过 `mihomo` 部署
+### 方法二：通过 `mihomo` 自定义 Padding 填充部署
 
 #### 1. 生成自签证书
 ```bash
 openssl req -x509 -newkey ec:<(openssl ecparam -name prime256v1) -keyout "./server.key" -out "./server.crt" -days 36500 -nodes -subj "/CN=bing.com"
 ```
 
-#### 2. 编写 `config.yaml` 配置文件
+#### 2. 配置文件 `config.yaml`
 ```yaml
 listeners:
 - name: anytls-in-1
@@ -94,8 +90,7 @@ listeners:
   port: 8443
   listen: 0.0.0.0
   users:
-    username1: 您的密码1
-    username2: 您的密码2
+    user1: 你的自定义密码
   certificate: ./server.crt
   private-key: ./server.key
   padding-scheme: |
@@ -112,29 +107,5 @@ listeners:
 
 #### 3. 启动指令
 ```bash
-# 启动 mihomo
 ./mihomo -d ./
-
-# 后台运行
-nohup ./mihomo -d ./ > /dev/null 2>&1 &
-
-# 结束进程
-pkill -f mihomo
 ```
-
----
-
-## 协议背景与反馈分享
-
-对于稳定要求比较高的用户建议自己搭建。
-
-目前网络上几种主流协议的被封锁反馈（基于过去两年的统计）：
-* **SS (Shadowsocks) 节点**：在普通 VPS 上搭建使用，大概率极短时间内（第二天）就会被封锁 IP。
-* **VMess + WS (Websocket) 节点**：容易被精确识别并封锁端口，需要频繁更换端口，目前已不推荐使用。
-* **VLESS + Vision 节点**：近期有部分用户反馈被阻断。排查后发现多是因为免费证书域名（如 `nip.io`）被防火墙直接污染，与协议本身关联不大。
-* **VLESS + Vision + Reality 节点**：表现最稳定，几乎没有被封锁的反馈。如果偶尔遇到白名单地区阻断，建议将目标域名修改为大厂域名。
-
-### TLS in TLS 的特征缓解
-“TLS in TLS” 指在加密隧道里传输另一个加密隧道，该流量指纹目前极易被防火墙识别。AnyTLS 通过自定义填充机制来消除该特征。
-
-与传统的 Vision流控（采用固定的数据包开头字节填充）相比，AnyTLS 支持**自定义 padding 填充参数**。用户可以灵活设定填充的数据包数量、每个包的字节范围，极大增加了防火墙特征分析的难度。

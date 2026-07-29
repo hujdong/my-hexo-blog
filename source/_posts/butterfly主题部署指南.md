@@ -1,77 +1,77 @@
 ﻿---
-title: butterfly主题部署指南
+title: butterfly主題部署指南
 date: 2025-08-09 14:25:50
 tags:
   - Butterfly
-  - 主题部署
+  - 主題部署
 ---
 
-# hexo的butterfly主题美化，2024年初版
+# hexo的butterfly主題美化，2024年初版
 
-转载自：https://blog.csdn.net/JesseXW
+轉載自：https://blog.csdn.net/JesseXW
 
-**先贴上butterfly主题作者的官方美化文档地址，如果有大佬比较会的可以直接看他的（~~不过部分功能可能用不了了~~）：**  
+**先貼上butterfly主題作者的官方美化文件地址，如果有大老比較會的可直接看他的（~~不過部分功能可能用不了了~~）：**  
 [Butterfly 安裝文檔(一) 快速開始 | Butterfly](https://butterfly.js.org/posts/21cfbf15/#%E5%8D%87%E7%B4%9A%E5%BB%BA%E8%AD%B0)
 
 <!-- more -->
 
-**注意！！！如果发现配置不生效，请先执行 `hexo clean`，然后清除浏览器缓存试试。如果还是不行，请检查配置文件的缩进是否有问题！！！**
+**注意！！！如果發現配置不生效，請先執行 `hexo clean`，然後清除瀏覽器快取試試。如果還是不行，請檢查配置檔案的縮排是否有問題！！！**
 
-## 1. 准备工作
+## 1. 準備工作
 
-### 1.1 安装butterfly
+### 1.1 安裝butterfly
 
-**在hexo的根目录下**键入以下命令：
+**在hexo的根目錄下**鍵入以下命令：
 
 ```bash
 npm install hexo-theme-butterfly
 ```
 
-### 1.2 修改配置文件，应用butterfly主题
+### 1.2 修改配置檔案，應用butterfly主題
 
-修改 `_config.yml` 中的 `theme` 属性为 `butterfly`。
+修改 `_config.yml` 中的 `theme` 屬性為 `butterfly`。
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-0cc53ca3fb892aa2d472d0ca54158de2.png)
 
-### 1.3 安装插件
+### 1.3 安裝外掛
 
-**如果你没有 pug 以及 stylus 的渲染器，请下载安装：**
+**如果你沒有 pug 以及 stylus 的渲染器，請下載安裝：**
 
-在hexo根目录下键入以下命令：
+在hexo根目錄下鍵入以下命令：
 
 ```bash
 npm install hexo-renderer-pug hexo-renderer-stylus --save
 ```
 
-### 1.4 推荐操作，复制一份butterfly主题专用的配置文件
+### 1.4 推薦操作，複製一份butterfly主題專用的配置檔案
 
-在 hexo 的根目录创建一个文件 `_config.butterfly.yml`，后续对butterfly主题的美化配置就在该配置文件下进行修改即可。
+在 hexo 的根目錄建立一個檔案 `_config.butterfly.yml`，後續對butterfly主題的美化配置就在該配置檔案下進行修改即可。
 
-**层级关系如下图所示：**
+**層級關係如下圖所示：**
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-1799bd03088fb81ea0888bb1d2281fe7.png)
 
-### 1.5 设置一个图片存储目录
+### 1.5 設定一個圖片存儲目錄
 
-在 `source` 目录下新建一个 `image` 文件夹，方便后续存储展示用的相关图片（~~名字你可以随便取~~）
+在 `source` 目錄下新建一個 `image` 資料夾，方便後續存儲展示用的相關圖片（~~名字你可以隨便取~~）
 
-**层级关系如下：**
+**層級關係如下：**
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-6605915ba7f40cc826797d68d5ec67c2.png)
 
-## 2. 网站资料配置
+## 2. 網站資料配置
 
-在 **_config.yml** 文件里配置！
+在 **_config.yml** 檔案裡配置！
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-73d3ec6379f5c43af4daf6ebb114735e.png)
 
-对应效果如图：
+對應效果如圖：
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-7a052ba48e20ceaf23d3c07bdf08a8cb.png)
 
-## 3. 导航栏配置
+## 3. 導覽列配置
 
-这里我直接copy展示用的代码了（~~毕竟完全不会~~）
+這裡我直接copy展示用的程式碼了（~~畢竟完全不會~~）
 
 ```yaml
 nav:
@@ -80,44 +80,44 @@ nav:
   fixed: false # fixed navigation bar
 post_asset_folder: true
 menu:
-  首页: / || fas fa-home
-  时间轴: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
-  清单||fa fa-heartbeat:
-    音乐: /music/ || fas fa-music
+  首頁: / || fas fa-home
+  時間軸: /archives/ || fas fa-archive
+  標籤: /tags/ || fas fa-tags
+  分類: /categories/ || fas fa-folder-open
+  清單||fa fa-heartbeat:
+    音樂: /music/ || fas fa-music
     照片: /Gallery/ || fas fa-images
-    电影: /movies/ || fas fa-video
+    電影: /movies/ || fas fa-video
 ```
 
-效果（**搜索是额外配的，后面会说**）：
+效果（**搜尋是額外配的，後面會說**）：
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-8df3966496d14fe526ad2041b0292d71.png)
 
-## 4. 修改头像
+## 4. 修改頭像
 
-将你喜欢的头像复制到之前配置的image文件夹里，路径如图所示：
+將你喜歡的頭像複製到之前配置的image資料夾裡，路徑如圖所示：
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-bf8ed33c0aba5f9127240e0dca667294.png)
 
-然后在你复制出来的主题配置文件，也就是 `_config.butterfly.yml` 中添加如下配置：
+然後在你複製出來的主題配置檔案，也就是 `_config.butterfly.yml` 中添加如下配置：
 
 ```yaml
-#头像
+#頭像
 avatar:
   img: /image/miku.jpg
-  # effect: true # 头像会一直转，转的贼快，太鬼畜了
+  # effect: true # 頭像會一直轉，轉的賊快，太鬼畜了
 ```
 
-## 5. 顶部图设置
+## 5. 頂部圖設定
 
-代码如下：
+程式碼如下：
 
 ```yaml
-#顶部图
+#頂部圖
 index_img: /image/miku.jpg
 default_top_img: /image/miku.jpg
-index_top_img_height: 400px #顶部图高度
+index_top_img_height: 400px #頂部圖高度
 ```
 
 效果：
@@ -125,22 +125,22 @@ index_top_img_height: 400px #顶部图高度
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-a8d37c483f102524a0544fb325c6e4a3.png)
 
 **tips：**
-1. 感觉400px差不多了，或者默认就是全屏，但是全屏得往下拉才能看见博客。~~对于萌新不是很友好，我第一次进就是发现找半天找不到博客在哪~~
-2. 图片不要被宽屏误导了，请选择**竖屏**展示的图片，且清晰度越高越好（不然就是糊的）
-3. 经过观察，设置为400px时，展示的图片位置大概就在中间，所以最好选择你最想展示的部分为中间的图片~
+1. 感覺400px差不多了，或者預設就是全螢幕，但是全螢幕得往下拉才能看見博客。~~對於新手不是很友好，我第一次進就是發現找半天找不到博客在哪~~
+2. 圖片不要被寬螢幕誤導了，請選擇**直螢幕**展示的圖片，且清晰度越高越好（不然就是糊的）
+3. 經過觀察，設定為400px時，展示的圖片位置大概就在中間，所以最好選擇你最想展示的部分為中間的圖片~
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-91f7084634b7b25deeef854ac1e509c6.png)
 
-## 6. 统计功能
+## 6. 統計功能
 
-推荐使用百度的api，首先你需要到百度统计官网申请id：  
-[百度统计——一站式智能数据分析与应用平台](https://tongji.baidu.com/web/welcome/login?castk=LTE=)
+推薦使用百度的api，首先你需要到百度統計官網申請id：  
+[百度統計——一站式智能數據分析與應用平台](https://tongji.baidu.com/web/welcome/login?castk=LTE=)
 
-具体咋申请我忘了……自己多找找看吧 
+具體咋申請我忘了……自己多找找看吧 
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-876d0858b5e0ed68987f94a2687f181d.png)
 
-问号后面的代码就是id，在 `_config.yml` 中添加如下配置：
+問號後面的程式碼就是id，在 `_config.yml` 中添加如下配置：
 
 ```yaml
 baidu_analytics: 你的id
@@ -148,9 +148,9 @@ baidu_analytics: 你的id
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-3c3b203d3e5d6b9b7471f5d93c107ce8.png)
 
-## 7. 运行时间
+## 7. 運行時間
 
-代码如下：
+程式碼如下：
 
 ```yaml
 runtimeshow:
@@ -158,15 +158,15 @@ runtimeshow:
   publish_date: 1/4/2024 00:00:00
 ```
 
-> `publish_date` 就是你博客的创建时间，格式是 **日/月/年**
+> `publish_date` 就是你博客的建立時間，格式是 **日/月/年**
 
 效果：
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-c9384bcd31aa16e260033db92cd67a53.png)
 
-## 8. 本地搜索
+## 8. 本地搜尋
 
-在主题配置文件下 `_config.butterfly.yml` 加入如下代码：
+在主題配置檔案下 `_config.butterfly.yml` 加入如下程式碼：
 
 ```yaml
 local_search:
@@ -186,35 +186,35 @@ local_search:
 
 ## 9. 背景特效
 
-详见官方文档：[Butterfly 安裝文檔(四) 主題配置-2 | Butterfly](https://butterfly.js.org/posts/ceeb73f/#%E8%83%8C%E6%99%AF%E7%89%B9%E6%95%88)
+詳見官方文檔：[Butterfly 安裝文檔(四) 主題配置-2 | Butterfly](https://butterfly.js.org/posts/ceeb73f/#%E8%83%8C%E6%99%AF%E7%89%B9%E6%95%88)
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-03fc5e060d723a7f7330230a141d29b9.png)
 
-我的博客选的是动态彩带，代码如下：
+我的博客選的是動態彩帶，程式碼如下：
 
 ```yaml
 canvas_fluttering_ribbon:
   enable: true
-  mobile: false # false 手机端不显示 true 手机端显示
+  mobile: false # false 手機端不顯示 true 手機端顯示
 ```
 
-## 10. 鼠标点击特效
+## 10. 滑鼠點擊特效
 
-目前官方文档中**鼠标点击特效的文字特效已无法使用（截至2024/1/18）**，目前我的博客采用的是爱心效果，代码如下：
+目前官方文檔中**滑鼠點擊特效的文字特效已無法使用（截至2024/1/18）**，目前我的博客採用的是愛心效果，程式碼如下：
 
 ```yaml
-# 点击出现爱心
+# 點擊出現愛心
 click_heart:
   enable: true
   mobile: false
 ```
 
-## 11. 网站副标题（循环打字特效）
+## 11. 網站副標題（循環打字特效）
 
-添加如下代码即可（速度我已经进行了相应调整，您可以根据自己的喜好进行修改）：
+添加如下程式碼即可（速度我已經進行了相應調整，你可以根據自己的喜好進行修改）：
 
 ```yaml
-# 主页subtitle
+# 主頁subtitle
 subtitle:
   enable: true
   # Typewriter Effect (打字效果)
@@ -222,31 +222,31 @@ subtitle:
   startDelay: 300 # time before typing starts in milliseconds
   typeSpeed: 200 # type speed in milliseconds
   backSpeed: 800 # backspacing speed in milliseconds
-  # loop (循环打字)
+  # loop (循環打字)
   loop: true
-  # source 调用三方服务
-  # source: false 开关调用
-  # subtitle 会先显示 source , 再显示 sub 的內容
+  # source 調用三方服務
+  # source: false 開關調用
+  # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: true
-  # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
+  # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - 自小刺头深草里 &#44; 而今渐觉出蓬蒿
-    - 时人不识凌云木 &#44; 直待凌云始道高
+    - 自小刺頭深草裡 &#44; 而今漸覺出蓬蒿
+    - 時人不識凌雲木 &#44; 直待凌雲始道高
 ```
 
 效果：
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-65eefc231690ca91c91853ddd6869514.png)
 
-## 12. 页面加载动画
+## 12. 頁面載入動畫
 
-在主题配置文件 `_config.butterfly.yml` 加入以下代码即可：
+在主題配置檔案 `_config.butterfly.yml` 加入以下程式碼即可：
 
 ```yaml
-#加载动画
+#載入動畫
 preloader:
   enable: true
-  source: 1 #可选值1=fullpage或2=progress bar，可查看https://codebyzach.github.io/pace/
+  source: 1 #可選項1=fullpage或2=progress bar，可查看https://codebyzach.github.io/pace/
   pace_css_url:
 ```
 
@@ -254,11 +254,11 @@ preloader:
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-a2b85380e130b323fdae2e6c5f2ead27.png)
 
-> 这个加载动画是butterfly默认的，目前在百度上没有找到可以直接使用的加载动画代码或url，只能凑合着用了，呃呃。
+> 這個載入動畫是butterfly預設的，目前在百度上沒有找到可以直接使用的載入動畫程式碼或url，只能湊合著用了，呃呃。
 
-## 13. 池塘养鱼
+## 13. 池塘養魚
 
-在主题配置文件 `_config.butterfly.yml` 加入以下代码即可：
+在主題配置檔案 `_config.butterfly.yml` 加入以下程式碼即可：
 
 ```yaml
 inject:
@@ -269,72 +269,72 @@ inject:
        - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>
 ```
 
-**有时候会遇到cdn解析失败，导致鱼塘加载不出来，建议还是以js文件格式本地引入，操作方法见下👇👇👇**
+**有時候會遇到cdn解析失敗，導致魚塘載入不出來，建議還是以js檔案格式本地引入，操作方法見下👇👇👇**
 
-### 13.1 在 source 目录下新建一个 styles 文件夹，用于存放相关文件
+### 13.1 在 source 目錄下新建一個 styles 資料夾，用於存放相關檔案
 
-层级如下：
+層級如下：
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-7c2572b09870a5a68e0bdddf11c80d99.png)
 
-### 13.2 添加如下两个文件
+### 13.2 添加如下兩個檔案
 
-**注意：这两个文件的目录是基于我设置的styles目录下，如果你的文件夹名称是你自己设置的，请同步修改文件中涉及到的文件引用地址路径！！！**
+**注意：這兩個檔案的目錄是基於我設定的styles目錄下，如果你的資料夾名稱是你自己設定的，請同步修改檔案中涉及到的檔案引用地址路徑！！！**
 
-### 13.3 在主题配置文件下引入这两个文件
+### 13.3 在主題配置檔案下引入這兩個檔案
 
-代码如下：
+程式碼如下：
 
 ```html
 - <script src="/styles/fish.js"></script>
 ```
 
-一样也得引入 jquery：
+一樣也得引入 jquery：
 
 ```html
 - <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 ```
 
-层级关系如图所示：
+層級關係如圖所示：
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-31312e6864b3c409009395c283fe049d.png)
 
-## 14. 渐变色设置
+## 14. 漸變色設定
 
-在styles目录下新建一个 **main.css** 文件，键入代码。
+在styles目錄下新建一個 **main.css** 檔案，鍵入程式碼。
 
-**同样，也需要在主题配置文件中引入这个css文件：**
+**同樣，也需要在主題配置檔案中引入這個css檔案：**
 
 ```html
 - <link rel="stylesheet" href="/styles/main.css">
 ```
 
-层级关系如下图所示：
+層級關係如下圖所示：
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-bdb856e8341b07ec8de0c064c5dc4b3a.png)
 
-## 15. 浏览器图标修改
+## 15. 瀏覽器圖示修改
 
-先找一个你喜欢的图标，注意格式需为32*32。可以从阿里的矢量图库中下载自己喜欢的：  
+先找一個你喜歡的圖示，注意格式需為32*32。可以從阿里的向量圖庫中下載自己喜歡的：  
 [iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/)
 
-保存后放在image文件夹内（或者你自己自定义存图片的文件夹）：
+保存後放在image資料夾內（或者你自己自訂存圖片的資料夾）：
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-bca7c5ac07ec6206bbc7f616b20dfb66.png)
 
-在你的主题配置文件内添加如下代码即可：
+在你的主題配置檔案內添加如下程式碼即可：
 
 ```yaml
 favicon: /image/动物.png
 ```
 
-效果如图所示：
+效果如圖所示：
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-036dc8e31a6c90ace72e655c6b7f99fd.png)
 
-## 16. 添加域名备案信息（butterfly主题）
+## 16. 添加功能點備案資訊（butterfly主題）
 
-在你的主题配置文件下加入以下代码：
+在你的主題配置檔案下加入以下程式碼：
 
 ```yaml
 footer:
@@ -345,64 +345,64 @@ footer:
   copyright: true
 ```
 
-## 17. nginx配置监听转发
+## 17. nginx配置監聽轉發
 
-安装好后加入如下配置，如果有的话直接替换就行了：
+安裝好後加入如下配置，有的話直接替換就行了：
 
 ```nginx
 server{
-  listen 80; # 监听的端口
-  server_name  xxxx; # 监听的地址，相当于就是你的域名地址
+  listen 80; # 監聽的埠號
+  server_name  xxxx; # 監聽的地址，相當於就是你的功能點地址
   index  index.php index.html index.htm;
 
   location / {
-    proxy_pass xxxx; # 转发地址，带上端口号
-    proxy_set_header Host $proxy_host; # 修改转发请求头，让8080端口的应用可以受到真实的请求
+    proxy_pass xxxx; # 轉發地址，帶上埠號
+    proxy_set_header Host $proxy_host; # 修改轉發請求頭，讓8080埠號的應用可以受到真實的請求
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
   }
 }
 ```
 
-## 18. 搬运自己的csdn文章到hexo
+## 18. 搬運自己的csdn文章到hexo
 
-百度一搜一大堆，这里自己简单总结下：
+百度一搜尋一大堆，這裡自己簡單總結下：
 
-### 18.1 获取文章信息
+### 18.1 獲取文章資訊
 
-打开自己写的文章，打开开发者模式（F12），搜索 **article_content**：
+打開自己寫的文章，打開開發者模式（F12），搜尋 **article_content**：
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-07a8150976be516c41ce40a67270d779.png)
 
-### 18.2 将复制的文章信息转换为md格式
+### 18.2 將複製的文章資訊轉換為md格式
 
-进入下方网站，按照序号操作，最后转换的文件不用下载，可以直接全选复制到typora里操作。  
+進入下方網站，按照序號操作，最後轉換的檔案不用下載，可以直接全選複製到typora裡操作。  
 [markdown编辑器 - 在线工具](https://tool.lu/markdown/)
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-fd14b2e6cf8f2b449c9dbb95294c074e.png)
 
-### 18.3 对于图片的处理
+### 18.3 對於圖片的處理
 
-csdn是有防盗链的，所以你直接复制粘贴放到hexo上图片是加载不出来的。
+csdn是有防盜鏈的，所以你直接複製貼上放到hexo上圖片是載入不出來的。
 
-方法一：另存为后复制粘贴（超级无脑）
+方法一：另存為後複製貼上（超級無腦）
 
-方法二：结合之前我写的文章  
+方法二：結合之前我寫的文章  
 [腾讯云图床（对象存储）+typora+picgo实现图片一键上传-CSDN博客](https://blog.csdn.net/JesseXW/article/details/135740635?spm=1001.2014.3001.5501)
 
-全自动上传，记得开一下这个设置，会自动进行url替换
+全自動上傳，記得開一下這個設定，會自動進行url替換
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-266310ebad104d5bb1209b8347956ad7.png)
 
-### 18.4 图片压缩
+### 18.4 圖片壓縮
 
-可以使用tx云对象存储自带的压缩，也可以自己手动压缩成webp格式。步骤如下：  
+可以使用tx雲對象存儲自帶的壓縮，也可以自己手動壓縮成webp格式。步驟如下：  
 [Online PNG to WebP image converter](https://ezgif.com/png-to-webp?err=expired)
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-86fd084319c35d88934998c8ebfc6805.png)
 
 ![](https://raw.githubusercontent.com/hujdong/image_auto/main/obsidian/1754448416-f970b1bc2e2a236cd003f6647a7aba72.png)
 
-webp的展示效果还是不错的，体积压缩了不少但清晰度还是挺能打的。
+webp的展示效果還是不錯的，體積壓縮了不少但清晰度還是挺能打的。
 
-后面对该图片替换就可以了
+後面對於該圖片替換就可以了

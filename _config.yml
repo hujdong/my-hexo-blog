@@ -4,12 +4,12 @@
 
 # Site
 title: "想像力"
-subtitle: "比知识更重要"
+subtitle: "比知識更重要"
 description: '我可以跟藝術家一樣，自由揮灑我的想像力。想像力比知識更重要，知識是有限的，想像力卻可以囊括整個世界。'
 keywords:
 author: 511PaPa
 language: zh-TW
-timezone: 'Asia/Shanghai'
+timezone: 'Asia/Taipei'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'

@@ -2,19 +2,19 @@
   display: none !important;
 }
 
-/* 文章图片优化：居中、限制最大尺寸与防错位 */
+/* 文章图片精细美化：限制最大宽度为 350px，对标原网站精致手机截图尺寸 */
 .posts-expand .post-body img {
   display: block !important;
-  margin: 1.5rem auto !important;
-  max-width: 75% !important;
-  max-height: 520px !important;
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  margin: 1.8rem auto !important;
+  max-width: 350px !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
 }
 
 @media (max-width: 767px) {
   .posts-expand .post-body img {
-    max-width: 90% !important;
-    max-height: 420px !important;
+    max-width: 85% !important;
   }
 }

@@ -36,25 +36,25 @@ categories:
 1. 請在主力機及備份機，皆安裝軟體「Syncthing」。
 2. 開啟「Syncthing」APP，同意定位權限及關閉電池最佳化（要允許喔！若不關閉，Syncthing 有機會不自動備份）。
 
-![Syncthing 權限設定 1](https://images.vocus.cc/8dfed718-30aa-4223-ba38-8e567cc6bb0c.jpg)
+![Syncthing 權限設定 1](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMXam20g8BfCOViLVNr5ERLBY-Z3iEAAo8VaxtqnXBXOq3miIBQcWwBAAMCAAN3AAM9BA.jpg)
 
-![Syncthing 權限設定 2](https://images.vocus.cc/42612d51-6453-470a-a964-c168f1e795b8.jpg)
+![Syncthing 權限設定 2](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMeam20nVXDU2_142TEJM_XWwr3SqcAApUVaxtqnXBXnlvv5scAAd_RAQADAgADdwADPQQ.jpg)
 
-![Syncthing 權限設定 3](https://images.vocus.cc/d172411b-bb3b-425b-abc7-1e284d57006c.jpg)
+![Syncthing 權限設定 3](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMPam20aY7Dei8cFomuIjo9x6SaO24AAocVaxtqnXBXATwf15u3mJcBAAMCAAN3AAM9BA.jpg)
 
-![Syncthing 權限設定 4](https://images.vocus.cc/a6404b86-3bc9-4e3a-9b0a-afa5e8c93c23.jpg)
+![Syncthing 權限設定 4](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMbam20kg1jQVkhFXIln81QDdLCA6UAApMVaxtqnXBX86kQQ4UG-fwBAAMCAAN3AAM9BA.jpg)
 
 3. 左邊滑出選單，選擇「設定」。
 
-![Syncthing 設定選單 1](https://images.vocus.cc/8bc94109-c7ff-4503-bb57-4c5ee352a551.jpg)
+![Syncthing 設定選單 1](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMfam20oOhm7JoBx8DhJl1hNKR5NPMAApYVaxtqnXBX3iUpVaj_37IBAAMCAAN3AAM9BA.jpg)
 
-![Syncthing 設定選單 2](https://images.vocus.cc/b466e33e-17ea-4124-a372-c404f9691c32.jpg)
+![Syncthing 設定選單 2](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMVam20fRcKbDYuM7jeHDf1w0wggX4AAo0VaxtqnXBXdWJzz5_sZ2MBAAMCAAN3AAM9BA.jpg)
 
 4. 進入「執行條件」，將「WIFI 執行」及「行動網路執行」都打開；進入「行為」，將「開機時自動執行服務」打開，基本上設定就完成了。
 
-![Syncthing 執行條件 1](https://images.vocus.cc/930795e9-cb61-44df-9488-b5d933f7f141.jpg)
+![Syncthing 執行條件 1](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMYam20h2xKwSnrKiXJUpl7qYNre4kAApAVaxtqnXBXKTsSTsYuNIUBAAMCAAN3AAM9BA.jpg)
 
-![Syncthing 執行條件 2](https://images.vocus.cc/2bf42afe-692e-40ba-80eb-41057916a640.jpg)
+![Syncthing 執行條件 2](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMYam20h2xKwSnrKiXJUpl7qYNre4kAApAVaxtqnXBXKTsSTsYuNIUBAAMCAAN3AAM9BA.jpg)
 
 ---
 
@@ -64,33 +64,33 @@ categories:
    * 先將**備份機**進入「裝置」頁，按下右上角 + 號，並選擇「裝置識別碼」，即會進入相機。
    * 再將**主力機**左滑出選單，選擇「顯示裝置識別碼」，讓備份機掃一下，並儲存即可。
 
-![配對裝置 1](https://images.vocus.cc/1454edf5-c9d6-42d2-b18b-3ec799cfb37e.jpg)
+![配對裝置 1](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMZam20izEUnNzWA0qFi2GGdO1h3WEAApEVaxtqnXBXXaCVtr8vO-ABAAMCAAN3AAM9BA.jpg)
 
-![配對裝置 2](https://images.vocus.cc/e3ed6ae8-3e9d-4ad8-9f70-f3c8e780b52a.jpg)
+![配對裝置 2](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMOam20Zl4TnQsah1Jw0ZBE9qodaQcAAoYVaxtqnXBXnzow8EsWi74BAAMCAAN3AAM9BA.jpg)
 
 6. 此時主力機會出現連線的需求，同意後增加裝置，那麼主力機的「裝置」頁就會出現另一台手機。
 
-![裝置連線通知 1](https://images.vocus.cc/abae8099-81f4-4a3a-bbc8-09f36996595f.jpg)
+![裝置連線通知 1](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMaam20j1ZGcbhxQhR_nENoCgg0E88AApIVaxtqnXBXr-Vuo94R5G8BAAMCAAN3AAM9BA.jpg)
 
-![裝置連線通知 2](https://images.vocus.cc/ae0bfbc9-77bf-4402-a371-ec4a089a4b12.jpg)
+![裝置連線通知 2](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMQam20bcjnsisqN2SP9tfWQWGXK7QAAogVaxtqnXBXny_WqvWzM_kBAAMCAAN3AAM9BA.jpg)
 
-![裝置連線通知 3](https://images.vocus.cc/df4174dd-1720-4f06-94e8-8261ceb52d7a.jpg)
+![裝置連線通知 3](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMTam20d8Ut286sMPP3Tt4TaeMEWMAAAosVaxtqnXBXBiYPIUCAlucBAAMCAAN3AAM9BA.jpg)
 
 7. 再來新增同步的資料夾，在「備份機」的「資料夾」頁，按下右上的 + 號。
    * 在資料夾路徑的地方點一下，並選擇 DCIM 的資料夾。
    * 同意存取後，在主力機的名稱將開關「打開」（圖中 pixel6 字樣處），右上角打勾即可。
 
-![新增同步資料夾 1](https://images.vocus.cc/30a50f8c-d4fd-4121-ba0e-605c1f76ed75.png)
+![新增同步資料夾 1](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMUam20ev2Fn8hisce5jcCUTtCSFYcAAowVaxtqnXBXQSN7mhyVWTQBAAMCAAN5AAM9BA.png)
 
-![新增同步資料夾 2](https://images.vocus.cc/d3884c25-0c31-4949-b594-476d07d6fe7d.jpg)
+![新增同步資料夾 2](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMdam20mnWAQtVbQq_gziOGxWHlfFQAApQVaxtqnXBXZB_20uBtIsQBAAMCAAN3AAM9BA.jpg)
 
-![新增同步資料夾 3](https://images.vocus.cc/5b5d4d22-2eec-4e24-92b0-b03285650b3e.jpg)
+![新增同步資料夾 3](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMRam20cN7YoFf_g18YujHQncsubn0AAokVaxtqnXBXFa2mpj4z4ZsBAAMCAAN3AAM9BA.jpg)
 
 8. 此時主力機又會收到同步資料夾的通知，同意後，一樣將備份機的開關「打開」（圖中 pixel3 字樣處），右上角打勾，那麼設定就完成囉！
 
-![完成同步設定 1](https://images.vocus.cc/827858e8-2b8d-4f12-b24c-eb58c48a9b70.jpg)
+![完成同步設定 1](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMSam20dO4swsTGbmHpBfhbFlZrtUUAAooVaxtqnXBXrbABubbMsqYBAAMCAAN3AAM9BA.jpg)
 
-![完成同步設定 2](https://images.vocus.cc/2526e885-a919-4bf5-b140-00c65906e122.jpg)
+![完成同步設定 2](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMWam20gGzWRHPn3pbmsZ4_rM9uXmgAAo4VaxtqnXBX3BjcDz3HmIgBAAMCAAN3AAM9BA.jpg)
 
 ---
 

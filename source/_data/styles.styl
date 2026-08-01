@@ -1,4 +1,20 @@
-﻿/* 确保搜索弹窗默认静默隐藏，点击搜索按钮后呼出 */
-.search-pop-overlay:not(.active) {
+﻿.search-pop-overlay:not(.active) {
   display: none !important;
+}
+
+/* 文章图片优化：居中、限制最大尺寸与防错位 */
+.posts-expand .post-body img {
+  display: block !important;
+  margin: 1.5rem auto !important;
+  max-width: 75% !important;
+  max-height: 520px !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 767px) {
+  .posts-expand .post-body img {
+    max-width: 90% !important;
+    max-height: 420px !important;
+  }
 }

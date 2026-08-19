@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 const postsDir = path.join(__dirname, '../source/_posts');
@@ -24,9 +24,12 @@ const charMap = {
 
 function convertText(text) {
   let codeBlocks = [];
-  text = text.replace(/(`[\s\S]*?`|[^]+)/g, function(match) {
-    codeBlocks.push(match);
-    return '__CODE_BLOCK_' + (codeBlocks.length - 1) + '__';
+  text = text.replace(/(`[\s\S]*?`|[^`]+)/g, function(match) {
+    if (match.startsWith('`')) {
+      codeBlocks.push(match);
+      return '__CODE_BLOCK_' + (codeBlocks.length - 1) + '__';
+    }
+    return match;
   });
 
   for (let key in zhMap) {

@@ -13,9 +13,9 @@ author: asionwu
 
 **\-----------------------【軟體截图】----------------------**
 
-![](foobar2000-v22510-%E6%B1%89%E5%8C%96/2835329-20220421144816101-723807786.jpg)
+![](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMkaoV2o1pQGmFW59epZCDs_VGLgKkAAowSaxvI5yhUVK6ISfPxi5wBAAMCAAN5AAM9BA.jpg)
 
-![](foobar2000-v22510-%E6%B1%89%E5%8C%96/2835329-20220421144822686-1607169509.jpg)
+![](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMlaoV2qX8lfvq_fYcMyYW5S7qMK6EAAo0SaxvI5yhU2oRAaO0siFQBAAMCAAN5AAM9BA.jpg)
 
   **\-----------------------【軟體介绍】----------------------**
 

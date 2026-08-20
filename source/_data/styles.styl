@@ -1,13 +1,12 @@
-﻿.search-pop-overlay:not(.active) {
+.search-pop-overlay:not(.active) {
   display: none !important;
 }
 
-/* 文章图片精细美化：限制最大宽度为 350px，对标原网站精致手机截图尺寸 */
+/* 文章图片精细美化：允许大图自适应文字行宽 (最大 100%)，居中并添加阴影与圆角 */
 .posts-expand .post-body img {
   display: block !important;
   margin: 1.8rem auto !important;
-  max-width: 350px !important;
-  width: auto !important;
+  max-width: 100% !important;
   height: auto !important;
   border-radius: 10px;
   box-shadow: 0 4px 18px rgba(0,0,0,0.08);
@@ -15,6 +14,6 @@
 
 @media (max-width: 767px) {
   .posts-expand .post-body img {
-    max-width: 85% !important;
+    max-width: 100% !important;
   }
 }

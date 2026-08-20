@@ -7,6 +7,8 @@ author: asionwu
 
 > ## Excerpt
 > foobar2000 v2.25.10 汉化版 【軟體截图】 【軟體介绍】 foobar2000 是一个 Windows 平台下的高级音频播放器.包含完全支持 unicode 及支持播放增益的高级標籤功能. 特色： * 支持的音频格式: MP3, MP4, AAC, CD Audio, WMA, V
+>
+> <!-- more -->
 
 ---
 **foobar2000 v2.25.10 汉化版**

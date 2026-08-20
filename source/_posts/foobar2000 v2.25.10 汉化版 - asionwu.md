@@ -15,9 +15,9 @@ author: asionwu
 
 **\-----------------------【軟體截图】----------------------**
 
-![](https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMkaoV2o1pQGmFW59epZCDs_VGLgKkAAowSaxvI5yhUVK6ISfPxi5wBAAMCAAN5AAM9BA.jpg)
+<img src="https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMkaoV2o1pQGmFW59epZCDs_VGLgKkAAowSaxvI5yhUVK6ISfPxi5wBAAMCAAN5AAM9BA.jpg" alt="foobar2000" style="width: 100%; display: block; margin: 0 auto;" />
 
-<img src="https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMlaoV2qX8lfvq_fYcMyYW5S7qMK6EAAo0SaxvI5yhU2oRAaO0siFQBAAMCAAN5AAM9BA.jpg" style="zoom: 200%;" />
+<img src="https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMlaoV2qX8lfvq_fYcMyYW5S7qMK6EAAo0SaxvI5yhU2oRAaO0siFQBAAMCAAN5AAM9BA.jpg" alt="foobar2000" style="width: 100%; display: block; margin: 0 auto;" />
 
   **\-----------------------【軟體介绍】----------------------**
 

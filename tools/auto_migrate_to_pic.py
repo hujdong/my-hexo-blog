@@ -1,14 +1,48 @@
-﻿import os
+import os
 import sys
 import re
+import io
 import requests
+from PIL import Image
 
 UPLOAD_URL = "https://pic.186021.xyz/upload"
 DOMAIN = "https://pic.186021.xyz"
+MAX_WIDTH = 1000  # 最大宽度限制为 1000 像素
+QUALITY = 85      # JPEG 压缩质量
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
+
+def resize_and_compress(img_bytes, ext):
+    if ext.lower() in ['gif', 'svg']:
+        return img_bytes
+    try:
+        img = Image.open(io.BytesIO(img_bytes))
+        width, height = img.size
+        changed = False
+        
+        # 只要宽度大于最大宽度限制，就进行等比缩放
+        if width > MAX_WIDTH:
+            new_height = int(height * (MAX_WIDTH / width))
+            img = img.resize((MAX_WIDTH, new_height), Image.Resampling.LANCZOS)
+            changed = True
+            
+        if changed or ext.lower() in ['jpg', 'jpeg', 'png']:
+            out_io = io.BytesIO()
+            save_format = img.format if img.format else ('JPEG' if ext.lower() in ['jpg', 'jpeg'] else ext.upper())
+            if save_format == 'MPO': save_format = 'JPEG'
+            
+            if save_format in ['JPEG', 'JPG']:
+                img.save(out_io, format='JPEG', quality=QUALITY, optimize=True)
+            elif save_format == 'PNG':
+                img.save(out_io, format='PNG', optimize=True)
+            else:
+                img.save(out_io, format=save_format)
+            return out_io.getvalue()
+    except Exception as e:
+        print(f"  [Resize/Compress Error] {e}")
+    return img_bytes
 
 def migrate_file(post_path):
     if not os.path.exists(post_path):
@@ -36,6 +70,9 @@ def migrate_file(post_path):
                 elif '.webp' in url.lower(): ext = 'webp'
                 elif '.gif' in url.lower(): ext = 'gif'
                 
+                # 自动缩放和压缩图片
+                img_bytes = resize_and_compress(img_bytes, ext)
+                
                 files = {'file': (f'image.{ext}', img_bytes, f'image/{ext}')}
                 up_resp = requests.post(UPLOAD_URL, files=files, headers=headers, timeout=15)
                 
@@ -44,7 +81,7 @@ def migrate_file(post_path):
                     if isinstance(res_json, list) and len(res_json) > 0 and 'src' in res_json[0]:
                         new_url = f"{DOMAIN}{res_json[0]['src']}"
                         url_map[url] = new_url
-                        print(f"  -> Uploaded: {new_url}")
+                        print(f"  -> Uploaded (Resized/Compressed): {new_url}")
         except Exception as e:
             print(f"  -> Failed {url}: {e}")
 

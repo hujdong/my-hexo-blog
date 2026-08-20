@@ -1,12 +1,12 @@
 ---
-source: https://www.cnblogs.com/asionwu/p/21537446
-author: asionwu
----
-
 # foobar2000 v2.25.10 汉化版 - asionwu
+---
 
 > ## Excerpt
 > foobar2000 v2.25.10 汉化版 【軟體截图】 【軟體介绍】 foobar2000 是一个 Windows 平台下的高级音频播放器.包含完全支持 unicode 及支持播放增益的高级標籤功能. 特色： * 支持的音频格式: MP3, MP4, AAC, CD Audio, WMA, V
+>
+> source: https://www.cnblogs.com/asionwu/p/21537446
+> author: asionwu
 >
 > <!-- more -->
 
@@ -15,7 +15,7 @@ author: asionwu
 
 **\-----------------------【軟體截图】----------------------**
 
-<img src="https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMkaoV2o1pQGmFW59epZCDs_VGLgKkAAowSaxvI5yhUVK6ISfPxi5wBAAMCAAN5AAM9BA.jpg" alt="foobar2000" style="width: 100%; display: block; margin: 0 auto;" />
+<img src="https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMkaoV2o1pQGmFW59epZCDs_VGLgKkAAowSaxvI5yhUVK6ISfPxi5wBAAMCAAN5AAM9BA.jpg" alt="foobar2000" style="width: 100%; display: block; margin: 0px auto; zoom: 200%;" />
 
 <img src="https://pic.186021.xyz/file/AgACAgUAAyEGAASky_cWAAMlaoV2qX8lfvq_fYcMyYW5S7qMK6EAAo0SaxvI5yhU2oRAaO0siFQBAAMCAAN5AAM9BA.jpg" alt="foobar2000" style="width: 100%; display: block; margin: 0 auto;" />
 
